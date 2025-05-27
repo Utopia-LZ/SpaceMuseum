@@ -22,7 +22,7 @@ public class StateMachine
     public StateMachine(CameraController Camera)
     {
         this.Camera = Camera;
-        States[State.Roam] = new Roam(this);
+        States[State.Roam] = new Roam(this, Camera.StartPosition);
         States[State.Revolve] = new Revolve(this);
         States[State.Detail] = new Detail(this);
         States[State.Split] = new Split(this);

@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
     public float MaxInteractionDistance = 10f;
     public Transform VerticalNode;
     public LayerMask ModelLayer;
+    public Vector3 StartPosition;
 
     [Header("»·ÈÆ²ÎÊý")]
     public float MaxDistance = 1.2f;

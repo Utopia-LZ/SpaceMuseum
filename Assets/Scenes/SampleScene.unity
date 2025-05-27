@@ -263,7 +263,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -18.66632, y: -2.0136719}
+  m_AnchoredPosition: {x: -18.66626, y: -2.0136719}
   m_SizeDelta: {x: -748.5366, y: -410.7137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &188977237
@@ -1638,6 +1638,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948631189}
   m_CullTransparentMesh: 1
+--- !u!1 &1010936509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010936510}
+  - component: {fileID: 1010936511}
+  m_Layer: 0
+  m_Name: Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1010936510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010936509}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1077688251}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1010936511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010936509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bee0ec1a9cc0c418b773469bf54ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Index: 0
 --- !u!1 &1075244863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1840,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1010936510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1077688252
@@ -1814,6 +1860,7 @@ MonoBehaviour:
   Col: 30
   RowInterval: 10
   ColInterval: 5
+  FixGenerate: 0
   Prefabs:
   - {fileID: 6430445913012493977, guid: 68b5fa7e306597246b4453f2c1fa1a4a, type: 3}
   - {fileID: 5092884034725956417, guid: cebdb4b4d7a8f88498d0f9b0764285f8, type: 3}
@@ -1871,6 +1918,9 @@ MonoBehaviour:
   TablePrefab: {fileID: 4405954191961359083, guid: 8cc08569f57bb8341b1f2046133a1f31,
     type: 3}
   WorldRoot: {fileID: 590881939}
+  ModelList: []
+  TableList: []
+  PanelList: []
 --- !u!1 &1181742628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2466,7 @@ MonoBehaviour:
   ModelLayer:
     serializedVersion: 2
     m_Bits: 64
+  StartPosition: {x: 5, y: 2, z: 0}
   MaxDistance: 1.6
   MinDistance: 0.8
   RevolveSpeed: 1

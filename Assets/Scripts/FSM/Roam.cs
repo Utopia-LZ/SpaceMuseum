@@ -4,13 +4,14 @@ public class Roam : IState
 {
     private CameraController camera;
     private StateMachine machine;
-    private Vector3 lastPosition = new Vector3(5, 2, 0);
+    private Vector3 lastPosition;
     private Quaternion lastRotation = Quaternion.identity;
     private LayerMask modelLayer;
 
-    public Roam(StateMachine machine)
+    public Roam(StateMachine machine, Vector3 startPos)
     {
         this.machine = machine;
+        lastPosition = startPos;
         camera = machine.Camera;
         modelLayer = (int)Mathf.Log(camera.ModelLayer, 2);
     }

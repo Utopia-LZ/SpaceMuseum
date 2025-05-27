@@ -52,5 +52,10 @@ Plugins.meta
 # local txt
 /*.txt
 
-# server src
-/Src
+#Test
+Assets/Test/
+Assets/Test.meta
+
+#git
+Assets/TutorialInfo/
+Assets/TutorialInfo.meta
