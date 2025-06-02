@@ -13,6 +13,7 @@ public class Generator : MonoBehaviour
     public GameObject PanelPrefab;
     public GameObject TablePrefab;
     public Transform WorldRoot;
+    public Transform ModelRoot;
 
     public List<GameObject> ModelList = new List<GameObject>();
     public List<GameObject> TableList = new List<GameObject>();
@@ -48,15 +49,21 @@ public class Generator : MonoBehaviour
 
     public void Generate(float x, float y, float z, int idx, bool fixedPos = false)
     {
-        GameObject table = Instantiate(TablePrefab);
+        GameObject table = Instantiate(TablePrefab, ModelRoot);
         TableList.Add(table);
 
-        GameObject model = Instantiate(Prefabs[idx % Prefabs.Count]);
+        GameObject model = Instantiate(Prefabs[idx % Prefabs.Count], ModelRoot);
         MeshRenderer[] mesh = model.GetComponentsInChildren<MeshRenderer>();
         float maxRadius = 0;
         for (int k = 0; k < mesh.Length; k++)
         {
             Vector3 size = mesh[k].bounds.size;
+            maxRadius = Mathf.Max(maxRadius, size.x, size.y, size.z);
+        }
+        SkinnedMeshRenderer[] skin = model.GetComponentsInChildren<SkinnedMeshRenderer>();
+        for (int k = 0; k < skin.Length; k++)
+        {
+            Vector3 size = skin[k].bounds.size;
             maxRadius = Mathf.Max(maxRadius, size.x, size.y, size.z);
         }
         if (maxRadius != 0) model.transform.localScale = 1f / maxRadius * Vector3.one;

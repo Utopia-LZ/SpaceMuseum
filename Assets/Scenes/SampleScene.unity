@@ -1664,7 +1664,7 @@ Transform:
   m_GameObject: {fileID: 1010936509}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 5}
+  m_LocalPosition: {x: 5, y: 0.5, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   Col: 30
   RowInterval: 10
   ColInterval: 5
-  FixGenerate: 0
+  FixGenerate: 1
   Prefabs:
   - {fileID: 6430445913012493977, guid: 68b5fa7e306597246b4453f2c1fa1a4a, type: 3}
   - {fileID: 5092884034725956417, guid: cebdb4b4d7a8f88498d0f9b0764285f8, type: 3}
@@ -1913,11 +1913,13 @@ MonoBehaviour:
   - {fileID: 9193591087570049158, guid: ccff37269107e8843beba411e1651a6c, type: 3}
   - {fileID: 3226718131688448777, guid: ca144d9a94b4b8544bfc77f01eec59e4, type: 3}
   - {fileID: 6854743083771768958, guid: 356ce2f46ed50ca488c2b5287ea5dbf5, type: 3}
+  - {fileID: 5967750882720818609, guid: 03f17e7d532820241963f9aa2147a785, type: 3}
   PanelPrefab: {fileID: 995210027658450131, guid: 895feb94dadf9414eada826a4f039c57,
     type: 3}
   TablePrefab: {fileID: 4405954191961359083, guid: 8cc08569f57bb8341b1f2046133a1f31,
     type: 3}
   WorldRoot: {fileID: 590881939}
+  ModelRoot: {fileID: 1851196887}
   ModelList: []
   TableList: []
   PanelList: []
@@ -2239,6 +2241,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517573629}
   m_CullTransparentMesh: 1
+--- !u!1 &1851196886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1851196887}
+  m_Layer: 0
+  m_Name: ModelRoot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1851196887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851196886}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855118402
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,3 +2545,4 @@ SceneRoots:
   - {fileID: 331171326}
   - {fileID: 590881939}
   - {fileID: 1077688251}
+  - {fileID: 1851196887}

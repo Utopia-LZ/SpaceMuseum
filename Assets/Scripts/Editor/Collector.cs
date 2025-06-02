@@ -5,6 +5,7 @@ public class Collector : EditorWindow
 {
     private SpawnPoint[] Points;
     private Generator generator;
+    private Transform ModelRoot;
 
     [MenuItem("Tools/Collector")]
     public static void ShowWindow()
@@ -16,6 +17,7 @@ public class Collector : EditorWindow
     private void OnEnable()
     {
         generator = FindObjectOfType<Generator>();
+        ModelRoot = GameObject.Find("ModelRoot").transform;
     }
 
     private void OnGUI()
