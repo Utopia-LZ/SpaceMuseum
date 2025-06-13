@@ -18,7 +18,7 @@ public class Detail : IState
         Quaternion rotation = Quaternion.Euler(angle);
         camera.SetDestination(pos, rotation);
         UIManager.Instance.DetailPanel.Open();
-        //TODO: Init detail panel
+        UIManager.Instance.DetailPanel.SetContent(camera.CurrentTarget.Content);
     }
 
     public void OnExit()

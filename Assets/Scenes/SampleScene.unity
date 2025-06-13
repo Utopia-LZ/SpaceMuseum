@@ -1860,7 +1860,7 @@ MonoBehaviour:
   Col: 30
   RowInterval: 10
   ColInterval: 5
-  FixGenerate: 1
+  FixGenerate: 0
   Prefabs:
   - {fileID: 6430445913012493977, guid: 68b5fa7e306597246b4453f2c1fa1a4a, type: 3}
   - {fileID: 5092884034725956417, guid: cebdb4b4d7a8f88498d0f9b0764285f8, type: 3}

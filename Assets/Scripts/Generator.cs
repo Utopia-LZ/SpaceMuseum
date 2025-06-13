@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Generator : MonoBehaviour
 {
@@ -78,6 +79,10 @@ public class Generator : MonoBehaviour
         table.transform.position = pos + Vector3.up * 1f;
         model.transform.position = pos + Vector3.up * 2.5f;
         panel.transform.position = pos + Vector3.up * 5.5f;
+
+        string str = "Content/" + model.GetComponent<Model>().Name + "_0";
+        str = Resources.Load<TextAsset>(str).text;
+        panel.GetComponent<WorldPanel>().SetContent(str);
     }
 
     public void Clear()

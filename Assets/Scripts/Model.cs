@@ -1,16 +1,22 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Model : MonoBehaviour
 {
     private List<Transform> total;
 
+    public string Name;
     public bool CanSplit = false;
     public float SplitRate = 2f;
+
+    public string Content;
 
     private void Start()
     {
         total = FindChildren(transform);
+        string str = "Content/" + Name + "_1";
+        Content = Resources.Load<TextAsset>(str).text;
     }
 
     private List<Transform> FindChildren(Transform root)
