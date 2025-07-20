@@ -26,12 +26,12 @@ public class StateMachine
         States[State.Revolve] = new Revolve(this);
         States[State.Detail] = new Detail(this);
         States[State.Split] = new Split(this);
-        SwitchState(State.Roam);
     }
 
     public void Update()
     {
-        CurrentState.OnUpdate();
+        if(CurrentState != null)
+            CurrentState.OnUpdate();
     }
 
     public void SwitchState(State state)

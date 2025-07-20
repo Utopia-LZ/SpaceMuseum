@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 
 public class Model : MonoBehaviour
 {
-    private List<Transform> total;
+    private List<Transform> total;  //保存零部件位置用来展示拆分
 
     public string Name;
     public bool CanSplit = false;
@@ -16,7 +17,10 @@ public class Model : MonoBehaviour
     {
         total = FindChildren(transform);
         string str = "Content/" + Name + "_1";
-        Content = Resources.Load<TextAsset>(str).text;
+        if (Directory.Exists(Application.dataPath + "/" + str)) //HACK 临时保护
+            Content = Resources.Load<TextAsset>(str).text;
+        else
+            Content = "样例标题\n样例正文";
     }
 
     private List<Transform> FindChildren(Transform root)

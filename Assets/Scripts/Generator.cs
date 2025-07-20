@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -81,7 +82,10 @@ public class Generator : MonoBehaviour
         panel.transform.position = pos + Vector3.up * 5.5f;
 
         string str = "Content/" + model.GetComponent<Model>().Name + "_0";
-        str = Resources.Load<TextAsset>(str).text;
+        if (Directory.Exists(Application.dataPath + "/" + str)) //HACK 临时保护
+            str = Resources.Load<TextAsset>(str).text;
+        else
+            str = "样例标题\n样例正文";
         panel.GetComponent<WorldPanel>().SetContent(str);
     }
 

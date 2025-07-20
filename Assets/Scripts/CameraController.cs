@@ -1,3 +1,4 @@
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -54,7 +55,6 @@ public class CameraController : MonoBehaviour
     private void Awake()
     {
         sm = new StateMachine(this);
-        Cursor.visible = false;
     }
 
     void Update()
@@ -63,6 +63,11 @@ public class CameraController : MonoBehaviour
 
         if (isLerping) Lerping();
         else sm.Update();
+    }
+
+    public void ClickStart()
+    {
+        sm.SwitchState(State.Roam);
     }
 
     private void GetInputs()
@@ -132,13 +137,19 @@ public class CameraController : MonoBehaviour
             UIManager.Instance.ShowTip("点击左键观察模型");
             if (InteractionA)
             {
-                TargetPos = hit.transform.position;
-                Vector3 dir = (transform.position - TargetPos).normalized;
-                RevolvePos = TargetPos + (MaxDistance + MinDistance) / 2f * dir;
-                RevolveRot = Quaternion.LookRotation(-dir);
-                CurrentTarget = hit.collider.GetComponent<Model>();
+                Model targetModel = hit.collider.GetComponent<Model>();
+                SetTarget(targetModel);
             }
         }
+    }
+
+    public void SetTarget(Model targetModel)
+    {
+        TargetPos = targetModel.transform.position;
+        Vector3 dir = (transform.position - TargetPos).normalized;
+        RevolvePos = TargetPos + (MaxDistance + MinDistance) / 2f * dir;
+        RevolveRot = Quaternion.LookRotation(-dir);
+        CurrentTarget = targetModel;
     }
 
     public Vector3 Forward(float dis)
