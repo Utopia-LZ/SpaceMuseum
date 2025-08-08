@@ -1,5 +1,1 @@
-sceneSetups:
-- path: Assets/Scenes/Nebula Pack/Skybox Dark Nebula/Scenes/Skybox Dark Nebula SCN.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
+sceneSetups: []
