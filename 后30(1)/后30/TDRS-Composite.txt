@@ -1,0 +1,1 @@
+Tracking and Data Relay Satellite是NASA的地球同步中继卫星系统，1983年首发。为航天飞机、ISS等提供连续通信覆盖，替代地面站。第三代TDRS-M 2017年发射，数据传输速率达300 Mbps。

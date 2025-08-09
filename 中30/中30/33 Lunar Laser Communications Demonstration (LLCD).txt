@@ -1,0 +1,1 @@
+Lunar Laser Communications Demonstration (LLCD) 是美国国家航空航天局（NASA）的一项突破性技术演示任务，旨在测试地月之间的高速激光通信技术。该实验于2013年搭载在月球大气与粉尘环境探测器（LADEE）任务中执行，成功验证了激光通信在深空探测中的可行性。

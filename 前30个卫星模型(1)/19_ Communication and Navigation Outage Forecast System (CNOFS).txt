@@ -1,0 +1,1 @@
+Communication and Navigation Outage Forecast System (CNOFS)是美国空军研究实验室的卫星，研究电离层不规则体对通信和导航的影响。2008年发射，携带多种仪器测量电离层等离子体特性，帮助预测信号干扰。

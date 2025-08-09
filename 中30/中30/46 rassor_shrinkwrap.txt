@@ -1,0 +1,1 @@
+RASSOR（Regolith Advanced Surface Systems Operations Robot）是NASA开发的实验性月球挖掘机器人，用于未来月球基地的资源开采（如提取水冰或氧气）。Shrinkwrap指其可折叠结构（便于火箭运输）。

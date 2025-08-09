@@ -1,0 +1,1 @@
+BWG Deep Space Station Antenna是NASA深空网络(DSN)的34米口径抛物面天线，因其白色外观被称为"大白盘"(Big White Dish)。位于澳大利亚堪培拉站，用于与深空探测器通信，工作频段包括S、X和Ka波段，是支持深空任务的关键地面设施。

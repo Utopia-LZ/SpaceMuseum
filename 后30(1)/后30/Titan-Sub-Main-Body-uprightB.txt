@@ -1,0 +1,1 @@
+ Titan-Sub-Main-Body-uprightB（主体舱段）构成火箭末级主承力筒体，直径3.05米，内部容纳液氧/液氢贮箱与航电设备舱，是载荷-推进系统的结构枢纽。该设计衍生自1966年首飞的Titan III卫星专用火箭，后续支撑了Voyager深空探测、Cassini土星任务等里程碑项目，直至2005年被Atlas V/Delta IV新一代火箭取代。

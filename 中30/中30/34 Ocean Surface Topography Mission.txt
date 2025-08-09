@@ -1,0 +1,1 @@
+Ocean Surface Topography Mission (OSTM)，也称为 Jason-2，是由 NASA（美国）、CNES（法国）、NOAA（美国国家海洋和大气管理局）和 EUMETSAT（欧洲气象卫星组织） 联合运营的海洋观测卫星。它是 TOPEX/Poseidon 和 Jason-1 任务的后续任务，旨在持续监测全球海平面变化、海洋环流和气候变化。

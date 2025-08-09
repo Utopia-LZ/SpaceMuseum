@@ -1,0 +1,1 @@
+Solar Radiation and Climate Experiment 是NASA地球观测项目，2003年发射。携带四台仪器测量太阳总辐照度（TSI）及200–2000 nm光谱辐照度，精度达0.01%。数据用于研究太阳辐射对气候的影响，如大气加热和电离层扰动。

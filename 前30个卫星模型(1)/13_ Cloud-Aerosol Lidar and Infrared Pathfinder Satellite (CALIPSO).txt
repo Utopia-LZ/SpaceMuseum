@@ -1,0 +1,1 @@
+Cloud-Aerosol Lidar and Infrared Pathfinder Satellite (CALIPSO)是2006年发射的联合美法地球观测卫星，搭载激光雷达和红外成像仪。通过垂直剖面观测云层和气溶胶分布，研究其对地球辐射平衡的影响，与CloudSat卫星协同工作。
