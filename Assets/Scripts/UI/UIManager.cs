@@ -118,4 +118,13 @@ public class UIManager : MonoBehaviour
             cnt = 0;
         }
     }
+
+    public void RefreshWorldPanels(List<GameObject> panels)
+    {
+        WorldPanels.Clear();
+        foreach(GameObject panel in panels)
+        {
+            WorldPanels.Add(panel.GetComponent<WorldPanel>());
+        }
+    }
 }

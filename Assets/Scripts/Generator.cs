@@ -47,8 +47,7 @@ public class Generator : MonoBehaviour
 
     private void Init()
     {
-        foreach(GameObject go in PanelList)
-            UIManager.Instance.WorldPanels.Add(go.GetComponent<WorldPanel>());
+        UIManager.Instance.RefreshWorldPanels(PanelList);
         for(int i = 0; i < Prefabs.Count; i++)
             Prefabs[i].GetComponent<Model>().Index = i;
     }
@@ -115,6 +114,7 @@ public class Generator : MonoBehaviour
         else
             str = "样例标题\n样例正文";
         panel.GetComponent<WorldPanel>().SetContent(str);
+        UIManager.Instance.RefreshWorldPanels(PanelList);
     }
 
     public void Clear()
