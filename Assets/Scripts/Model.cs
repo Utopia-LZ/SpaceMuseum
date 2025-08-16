@@ -7,6 +7,7 @@ public class Model : MonoBehaviour
 {
     private List<Transform> total;  //保存零部件位置用来展示拆分
 
+    public int Index;
     public string Name;
     public bool CanSplit = false;
     public float SplitRate = 2f;

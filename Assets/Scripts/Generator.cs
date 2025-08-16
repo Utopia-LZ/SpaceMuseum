@@ -1,15 +1,32 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEditor;
+
+public enum DisplayMode
+{
+    [Header("未定义")]
+    None = 0,
+    [Header("固定排列")]
+    Fix = 1,
+    [Header("自定义位置")]
+    General = 2,
+    [Header("只展示一个")]
+    OnlyOne = 3,
+}
 
 public class Generator : MonoBehaviour
 {
+#if UNITY_EDITOR
+    [EnumLabel("生成方式")]
+#endif
+    public DisplayMode Mode = DisplayMode.OnlyOne;
     public int Row = 2;
     public int Col = 20;
     public float RowInterval = 10f;
     public float ColInterval = 5f;
-    public bool FixGenerate = true;
+    public Vector3 UniquePosition;
+    private int uniqueIdx = 0;
 
     public List<GameObject> Prefabs;
     public GameObject PanelPrefab;
@@ -24,13 +41,16 @@ public class Generator : MonoBehaviour
     private void Start()
     {
         Init();
-        if(FixGenerate) FixedGenerate();
+        if (Mode == DisplayMode.Fix) FixedGenerate();
+        else if (Mode == DisplayMode.OnlyOne) GenerateOne(0);
     }
 
     private void Init()
     {
         foreach(GameObject go in PanelList)
             UIManager.Instance.WorldPanels.Add(go.GetComponent<WorldPanel>());
+        for(int i = 0; i < Prefabs.Count; i++)
+            Prefabs[i].GetComponent<Model>().Index = i;
     }
 
     private void FixedGenerate()
@@ -44,6 +64,14 @@ public class Generator : MonoBehaviour
         }
     }
 
+    public void GenerateOne(int idx = -1)
+    {
+        Clear();
+        if (idx == -1) uniqueIdx++;
+        else uniqueIdx = idx;
+        Generate(UniquePosition, uniqueIdx);
+    }
+
     public void Generate(Vector3 pos, int idx)
     {
         Generate(pos.x, pos.y, pos.z, idx);
@@ -51,7 +79,7 @@ public class Generator : MonoBehaviour
 
     public void Generate(float x, float y, float z, int idx, bool fixedPos = false)
     {
-        GameObject table = Instantiate(TablePrefab, ModelRoot);
+        GameObject table = Instantiate(TablePrefab, ModelRoot); //HACK 展台弃用了，目前隐藏掉了mesh，等确定下来把代码清一下
         TableList.Add(table);
 
         GameObject model = Instantiate(Prefabs[idx % Prefabs.Count], ModelRoot);

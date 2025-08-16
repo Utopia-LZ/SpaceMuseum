@@ -34,6 +34,7 @@ public class CameraController : MonoBehaviour
     public bool InteractionB;
     public bool SwitchHelp;
     public bool Quit;
+    public bool SwitchNext;
     public Vector3 RevolvePos;
     public Quaternion RevolveRot;
     private float MoveX;
@@ -74,6 +75,7 @@ public class CameraController : MonoBehaviour
     {
         Quit = Input.GetKeyDown(KeyCode.Q);
         SwitchHelp = Input.GetKeyDown(KeyCode.H);
+        SwitchNext = Input.GetKeyDown(KeyCode.N);
         MoveX = Input.GetAxis("Horizontal");
         MoveY = Input.GetAxis("Vertical");
         MoveV = Input.GetKey(KeyCode.Space) ? VerticalMoveSpeed : 0;
@@ -94,6 +96,8 @@ public class CameraController : MonoBehaviour
         transform.position += VerticalMoveSpeed * MoveV * Time.deltaTime * Vector3.up;
         transform.Rotate(Vector3.up, MouseX * MouseXSpeed);
         VerticalNode.Rotate(Vector3.left, MouseY * MouseXSpeed);
+
+        if (SwitchNext) CameraManager.Instance.Generator.GenerateOne();
     }
 
     public void RevolveMove()
@@ -143,6 +147,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    // 导航到模型位置
     public void SetTarget(Model targetModel)
     {
         TargetPos = targetModel.transform.position;

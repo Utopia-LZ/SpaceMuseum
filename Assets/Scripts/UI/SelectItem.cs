@@ -20,7 +20,7 @@ public class SelectItem : MonoBehaviour
         Navigate.onClick.AddListener(OnClickNavigate);
     }
 
-    public void Init(Model model)  //HACK 后面还要初始化贴图
+    public void Init(Model model)  //TODO 后面还要初始化贴图
     {
         this.model = model;
         Title.text = model.Name;
@@ -29,7 +29,8 @@ public class SelectItem : MonoBehaviour
 
     private void OnClickNavigate()
     {
-        CameraManager.Instance.Camera.SetTarget(model);
+        //CameraManager.Instance.Camera.SetTarget(model);
+        CameraManager.Instance.Generator.GenerateOne(model.Index);
         EventHandler.CallOpenSelectPanel(false);
     }
 }

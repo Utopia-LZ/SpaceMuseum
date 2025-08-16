@@ -32,7 +32,7 @@ public class SelectPanel : MonoBehaviour
         {
             gameObject.SetActive(false);
         });
-        List<GameObject> list = CameraManager.Instance.Generator.ModelList;
+        List<GameObject> list = CameraManager.Instance.Generator.Prefabs;
         GameObject newGo;
         foreach (GameObject go in list)
         {
