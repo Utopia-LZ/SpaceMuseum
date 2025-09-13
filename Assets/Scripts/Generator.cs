@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using UnityEditor;
 
 public enum DisplayMode
 {
@@ -45,8 +44,26 @@ public class Generator : MonoBehaviour
         else if (Mode == DisplayMode.OnlyOne) GenerateOne(0);
     }
 
+    private void AddExtraModels()
+    {
+        string path = Application.dataPath + "/Resources/PrefabPlus/";
+        if (Directory.Exists(path))
+        {
+            DirectoryInfo direction = new DirectoryInfo(path);
+            FileInfo[] files = direction.GetFiles("*");
+            for (int i = 0; i < files.Length; i++)
+            {
+                if (files[i].Name.EndsWith(".meta")) continue;
+                string localPath = "PrefabPlus/" + files[i].Name.Split('.')[0];
+                GameObject go = Resources.Load<GameObject>(localPath);
+                Prefabs.Add(go);
+            }
+        }
+    }
+
     private void Init()
     {
+        AddExtraModels();
         UIManager.Instance.RefreshWorldPanels(PanelList);
         for(int i = 0; i < Prefabs.Count; i++)
             Prefabs[i].GetComponent<Model>().Index = i;
@@ -109,7 +126,8 @@ public class Generator : MonoBehaviour
         panel.transform.position = pos + Vector3.up * 5.5f;
 
         string str = "Content/" + model.GetComponent<Model>().Name + "_0";
-        if (Directory.Exists(Application.dataPath + "/" + str)) //HACK 临时保护
+        string path = Application.dataPath + "/Resources/" + str + ".txt";
+        if (File.Exists(path)) //HACK 临时保护
             str = Resources.Load<TextAsset>(str).text;
         else
             str = "样例标题\n样例正文";

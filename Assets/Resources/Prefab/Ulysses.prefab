@@ -326,8 +326,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfd893bc5d652f14d9e7857dda0d0e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Index: 41
+  Name: SatelliteKit
   CanSplit: 0
   SplitRate: 2
+  Content: 
 --- !u!1 &2525725822196940390
 GameObject:
   m_ObjectHideFlags: 0

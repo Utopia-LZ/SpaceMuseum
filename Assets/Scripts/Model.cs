@@ -18,7 +18,8 @@ public class Model : MonoBehaviour
     {
         total = FindChildren(transform);
         string str = "Content/" + Name + "_1";
-        if (Directory.Exists(Application.dataPath + "/" + str)) //HACK 临时保护
+        string path = Application.dataPath + "/Resources/" + str + ".txt";
+        if (File.Exists(path)) //HACK 临时保护
             Content = Resources.Load<TextAsset>(str).text;
         else
             Content = "样例标题\n样例正文";

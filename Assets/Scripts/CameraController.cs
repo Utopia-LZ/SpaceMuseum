@@ -62,8 +62,11 @@ public class CameraController : MonoBehaviour
     {
         GetInputs();
 
-        if (isLerping) Lerping();
-        else sm.Update();
+        if(sm != null)
+        {
+            if (isLerping) Lerping();
+            else sm.Update();
+        }
     }
 
     public void ClickStart()
