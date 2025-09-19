@@ -92,8 +92,8 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _CloudAlpha: 0.53
-    - _CloudSpeed: 0.15
+    - _CloudAlpha: 0.421
+    - _CloudSpeed: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
