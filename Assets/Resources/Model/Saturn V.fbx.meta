@@ -1,0 +1,1693 @@
+fileFormatVersion: 2
+guid: c509d91bfe4d9f64cadb1291e8a6e6cc
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      74: -2836886533494135302
+    second: group1 gro|group1 groAction_group1 gro
+  - first:
+      74: -9023787348202114242
+    second: group1 gro|group1 pCoAction_group1 pCo
+  - first:
+      74: 8941454372939081130
+    second: group1 gro|group10 pCAction_group10 pC
+  - first:
+      74: -4939166320899232145
+    second: group1 gro|group11 pCAction_group11 pC
+  - first:
+      74: -3949357280634786532
+    second: group1 gro|group3 groAction_group3 gro
+  - first:
+      74: -1067165656405449474
+    second: group1 gro|group6 pCuAction_group6 pCu
+  - first:
+      74: -3420770259560842540
+    second: group1 gro|group7 pCuAction_group7 pCu
+  - first:
+      74: -8663425416864325452
+    second: group1 gro|group8 pCyAction_group8 pCy
+  - first:
+      74: 6180555647506335165
+    second: group1 gro|group9 pCyAction_group9 pCy
+  - first:
+      74: 319632707400097661
+    second: group1 gro|pCone2 groAction_pCone2 gro
+  - first:
+      74: -105800159652288973
+    second: group1 gro|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -3362106295288288467
+    second: group1 gro|pCube1 groAction_pCube1 gro
+  - first:
+      74: -800958851391417327
+    second: group1 gro|pCylinder1Action_pCylinder1
+  - first:
+      74: 1096422258645431779
+    second: group1 gro|pCylinder2Action_pCylinder2
+  - first:
+      74: -1806212586337002163
+    second: group1 gro|pCylinder3Action_pCylinder3
+  - first:
+      74: 7921986482791091540
+    second: group1 gro|pCylinder4Action_pCylinder4
+  - first:
+      74: -6783746730079447383
+    second: group1 gro|pCylinder5Action_pCylinder5
+  - first:
+      74: 1008384642545646512
+    second: group1 gro|polySurfa1Action_polySurfa1
+  - first:
+      74: 9115405169429796652
+    second: group1 gro|polySurfa2Action_polySurfa2
+  - first:
+      74: -5003816984025744894
+    second: group1 gro|polySurfa3Action_polySurfa3
+  - first:
+      74: -7526372694477144418
+    second: group1 gro|polySurfa4Action_polySurfa4
+  - first:
+      74: -2879901373788039557
+    second: group1 gro|polySurfacAction_polySurfac
+  - first:
+      74: -7248905417437524353
+    second: group1 gro|saturnv_caAction_saturnv_ca
+  - first:
+      74: -4842754239118103244
+    second: group1 pCo|group1 groAction_group1 gro
+  - first:
+      74: -7160737148075282270
+    second: group1 pCo|group1 pCoAction_group1 pCo
+  - first:
+      74: 4273097168696495173
+    second: group1 pCo|group10 pCAction_group10 pC
+  - first:
+      74: -2193495634329811661
+    second: group1 pCo|group11 pCAction_group11 pC
+  - first:
+      74: -6412784991614939019
+    second: group1 pCo|group3 groAction_group3 gro
+  - first:
+      74: 1543919205052660085
+    second: group1 pCo|group6 pCuAction_group6 pCu
+  - first:
+      74: 5526677370901319575
+    second: group1 pCo|group7 pCuAction_group7 pCu
+  - first:
+      74: 3920333646516178393
+    second: group1 pCo|group8 pCyAction_group8 pCy
+  - first:
+      74: -4269258974048430481
+    second: group1 pCo|group9 pCyAction_group9 pCy
+  - first:
+      74: 97599696057105521
+    second: group1 pCo|pCone2 groAction_pCone2 gro
+  - first:
+      74: 369579876090532024
+    second: group1 pCo|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 134993792459870811
+    second: group1 pCo|pCube1 groAction_pCube1 gro
+  - first:
+      74: -5368232709720622715
+    second: group1 pCo|pCylinder1Action_pCylinder1
+  - first:
+      74: 7573150292597135490
+    second: group1 pCo|pCylinder2Action_pCylinder2
+  - first:
+      74: 7467666441175166197
+    second: group1 pCo|pCylinder3Action_pCylinder3
+  - first:
+      74: -698328858899646769
+    second: group1 pCo|pCylinder4Action_pCylinder4
+  - first:
+      74: -1778060134847805085
+    second: group1 pCo|pCylinder5Action_pCylinder5
+  - first:
+      74: -8880588088952901883
+    second: group1 pCo|polySurfa1Action_polySurfa1
+  - first:
+      74: 2085675670649070639
+    second: group1 pCo|polySurfa2Action_polySurfa2
+  - first:
+      74: -6884078051504762783
+    second: group1 pCo|polySurfa3Action_polySurfa3
+  - first:
+      74: -3259988583506488473
+    second: group1 pCo|polySurfa4Action_polySurfa4
+  - first:
+      74: -3173397877229144081
+    second: group1 pCo|polySurfacAction_polySurfac
+  - first:
+      74: 6919652373820100471
+    second: group1 pCo|saturnv_caAction_saturnv_ca
+  - first:
+      74: 2523574765651090583
+    second: group10 pC|group1 groAction_group1 gro
+  - first:
+      74: 5024524973429316406
+    second: group10 pC|group1 pCoAction_group1 pCo
+  - first:
+      74: -2759985430786750632
+    second: group10 pC|group10 pCAction_group10 pC
+  - first:
+      74: 2939796605664110691
+    second: group10 pC|group11 pCAction_group11 pC
+  - first:
+      74: -4578848393214889870
+    second: group10 pC|group3 groAction_group3 gro
+  - first:
+      74: 417361876651988295
+    second: group10 pC|group6 pCuAction_group6 pCu
+  - first:
+      74: -4457848514762394332
+    second: group10 pC|group7 pCuAction_group7 pCu
+  - first:
+      74: -4029332917785597895
+    second: group10 pC|group8 pCyAction_group8 pCy
+  - first:
+      74: -2874276655620048616
+    second: group10 pC|group9 pCyAction_group9 pCy
+  - first:
+      74: -2123831541569905749
+    second: group10 pC|pCone2 groAction_pCone2 gro
+  - first:
+      74: 924665598522248638
+    second: group10 pC|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 1192413285456196958
+    second: group10 pC|pCube1 groAction_pCube1 gro
+  - first:
+      74: -7525206791815202572
+    second: group10 pC|pCylinder1Action_pCylinder1
+  - first:
+      74: 711000319497273634
+    second: group10 pC|pCylinder2Action_pCylinder2
+  - first:
+      74: 1450803214315276242
+    second: group10 pC|pCylinder3Action_pCylinder3
+  - first:
+      74: 8916014135934157189
+    second: group10 pC|pCylinder4Action_pCylinder4
+  - first:
+      74: -2034220669142610114
+    second: group10 pC|pCylinder5Action_pCylinder5
+  - first:
+      74: -2294689511682170971
+    second: group10 pC|polySurfa1Action_polySurfa1
+  - first:
+      74: -7388471527759304400
+    second: group10 pC|polySurfa2Action_polySurfa2
+  - first:
+      74: 9010621264984717690
+    second: group10 pC|polySurfa3Action_polySurfa3
+  - first:
+      74: 1073702169440978352
+    second: group10 pC|polySurfa4Action_polySurfa4
+  - first:
+      74: -2358880751916166989
+    second: group10 pC|polySurfacAction_polySurfac
+  - first:
+      74: 3794654438520417167
+    second: group10 pC|saturnv_caAction_saturnv_ca
+  - first:
+      74: -726231812291690875
+    second: group11 pC|group1 groAction_group1 gro
+  - first:
+      74: -6806580939785420627
+    second: group11 pC|group1 pCoAction_group1 pCo
+  - first:
+      74: -7886204751245802845
+    second: group11 pC|group10 pCAction_group10 pC
+  - first:
+      74: 8174738883410774312
+    second: group11 pC|group11 pCAction_group11 pC
+  - first:
+      74: -2215758898552081862
+    second: group11 pC|group3 groAction_group3 gro
+  - first:
+      74: -4830342493995192685
+    second: group11 pC|group6 pCuAction_group6 pCu
+  - first:
+      74: -556814818133685739
+    second: group11 pC|group7 pCuAction_group7 pCu
+  - first:
+      74: -7309049428849285845
+    second: group11 pC|group8 pCyAction_group8 pCy
+  - first:
+      74: 1991956593286366320
+    second: group11 pC|group9 pCyAction_group9 pCy
+  - first:
+      74: -3917048731249472500
+    second: group11 pC|pCone2 groAction_pCone2 gro
+  - first:
+      74: 6472005867383622097
+    second: group11 pC|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 1346174334449311244
+    second: group11 pC|pCube1 groAction_pCube1 gro
+  - first:
+      74: -5507062668199074172
+    second: group11 pC|pCylinder1Action_pCylinder1
+  - first:
+      74: -2312959703600702656
+    second: group11 pC|pCylinder2Action_pCylinder2
+  - first:
+      74: 6253146646506854615
+    second: group11 pC|pCylinder3Action_pCylinder3
+  - first:
+      74: -7469559755033999504
+    second: group11 pC|pCylinder4Action_pCylinder4
+  - first:
+      74: -939513982506227326
+    second: group11 pC|pCylinder5Action_pCylinder5
+  - first:
+      74: -1647565823241799047
+    second: group11 pC|polySurfa1Action_polySurfa1
+  - first:
+      74: -744994584352435223
+    second: group11 pC|polySurfa2Action_polySurfa2
+  - first:
+      74: -4141457507901800497
+    second: group11 pC|polySurfa3Action_polySurfa3
+  - first:
+      74: 6339027626168300816
+    second: group11 pC|polySurfa4Action_polySurfa4
+  - first:
+      74: 8955526055270125147
+    second: group11 pC|polySurfacAction_polySurfac
+  - first:
+      74: 8957685418876664102
+    second: group11 pC|saturnv_caAction_saturnv_ca
+  - first:
+      74: -596249066388669898
+    second: group3 gro|group1 groAction_group1 gro
+  - first:
+      74: -2210949684841850544
+    second: group3 gro|group1 pCoAction_group1 pCo
+  - first:
+      74: 4241101229858352752
+    second: group3 gro|group10 pCAction_group10 pC
+  - first:
+      74: -457028584768196710
+    second: group3 gro|group11 pCAction_group11 pC
+  - first:
+      74: 5788943570558361687
+    second: group3 gro|group3 groAction_group3 gro
+  - first:
+      74: 671215966586149908
+    second: group3 gro|group6 pCuAction_group6 pCu
+  - first:
+      74: 4833201823366984162
+    second: group3 gro|group7 pCuAction_group7 pCu
+  - first:
+      74: -1554269505303848234
+    second: group3 gro|group8 pCyAction_group8 pCy
+  - first:
+      74: 7163020377875717325
+    second: group3 gro|group9 pCyAction_group9 pCy
+  - first:
+      74: 4175427149658499077
+    second: group3 gro|pCone2 groAction_pCone2 gro
+  - first:
+      74: 101484056982958790
+    second: group3 gro|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 3725713118253754140
+    second: group3 gro|pCube1 groAction_pCube1 gro
+  - first:
+      74: -7231158690340824719
+    second: group3 gro|pCylinder1Action_pCylinder1
+  - first:
+      74: 4588525603756940437
+    second: group3 gro|pCylinder2Action_pCylinder2
+  - first:
+      74: 5614780270383536200
+    second: group3 gro|pCylinder3Action_pCylinder3
+  - first:
+      74: -3642719115196151231
+    second: group3 gro|pCylinder4Action_pCylinder4
+  - first:
+      74: -7405561274190676968
+    second: group3 gro|pCylinder5Action_pCylinder5
+  - first:
+      74: -8650319390132185278
+    second: group3 gro|polySurfa1Action_polySurfa1
+  - first:
+      74: 7276392610163959294
+    second: group3 gro|polySurfa2Action_polySurfa2
+  - first:
+      74: 3312879733287216596
+    second: group3 gro|polySurfa3Action_polySurfa3
+  - first:
+      74: 4476148682682572568
+    second: group3 gro|polySurfa4Action_polySurfa4
+  - first:
+      74: 4977882486036918691
+    second: group3 gro|polySurfacAction_polySurfac
+  - first:
+      74: -1653223908139073367
+    second: group3 gro|saturnv_caAction_saturnv_ca
+  - first:
+      74: -8549144534479237460
+    second: group6 pCu|group1 groAction_group1 gro
+  - first:
+      74: -475273297683339592
+    second: group6 pCu|group1 pCoAction_group1 pCo
+  - first:
+      74: 2999621152351901704
+    second: group6 pCu|group10 pCAction_group10 pC
+  - first:
+      74: -6706397777612001362
+    second: group6 pCu|group11 pCAction_group11 pC
+  - first:
+      74: 6077320412023640935
+    second: group6 pCu|group3 groAction_group3 gro
+  - first:
+      74: -6944726833983644891
+    second: group6 pCu|group6 pCuAction_group6 pCu
+  - first:
+      74: -9070781945067979353
+    second: group6 pCu|group7 pCuAction_group7 pCu
+  - first:
+      74: 7640110521883298682
+    second: group6 pCu|group8 pCyAction_group8 pCy
+  - first:
+      74: -2753454912167196653
+    second: group6 pCu|group9 pCyAction_group9 pCy
+  - first:
+      74: -4993118629139328899
+    second: group6 pCu|pCone2 groAction_pCone2 gro
+  - first:
+      74: 8162203094951319760
+    second: group6 pCu|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 7158248857160117176
+    second: group6 pCu|pCube1 groAction_pCube1 gro
+  - first:
+      74: 8421435321924022703
+    second: group6 pCu|pCylinder1Action_pCylinder1
+  - first:
+      74: 4263740025215453145
+    second: group6 pCu|pCylinder2Action_pCylinder2
+  - first:
+      74: -5251138048942648246
+    second: group6 pCu|pCylinder3Action_pCylinder3
+  - first:
+      74: 1079598712448064554
+    second: group6 pCu|pCylinder4Action_pCylinder4
+  - first:
+      74: 5579829749359675409
+    second: group6 pCu|pCylinder5Action_pCylinder5
+  - first:
+      74: 2495657597591543564
+    second: group6 pCu|polySurfa1Action_polySurfa1
+  - first:
+      74: -3154148130630933969
+    second: group6 pCu|polySurfa2Action_polySurfa2
+  - first:
+      74: 692031594865777061
+    second: group6 pCu|polySurfa3Action_polySurfa3
+  - first:
+      74: -1864683936648662504
+    second: group6 pCu|polySurfa4Action_polySurfa4
+  - first:
+      74: 1152311131178494687
+    second: group6 pCu|polySurfacAction_polySurfac
+  - first:
+      74: 2686464444632745673
+    second: group6 pCu|saturnv_caAction_saturnv_ca
+  - first:
+      74: -6707586802210138997
+    second: group7 pCu|group1 groAction_group1 gro
+  - first:
+      74: -7661897090137600317
+    second: group7 pCu|group1 pCoAction_group1 pCo
+  - first:
+      74: -8837783648834220074
+    second: group7 pCu|group10 pCAction_group10 pC
+  - first:
+      74: 7280637210428196409
+    second: group7 pCu|group11 pCAction_group11 pC
+  - first:
+      74: -8814651853212518212
+    second: group7 pCu|group3 groAction_group3 gro
+  - first:
+      74: 4808196948850965142
+    second: group7 pCu|group6 pCuAction_group6 pCu
+  - first:
+      74: 6194536840767461089
+    second: group7 pCu|group7 pCuAction_group7 pCu
+  - first:
+      74: -4678132422386771132
+    second: group7 pCu|group8 pCyAction_group8 pCy
+  - first:
+      74: -5865808093624301114
+    second: group7 pCu|group9 pCyAction_group9 pCy
+  - first:
+      74: -7352843288673928237
+    second: group7 pCu|pCone2 groAction_pCone2 gro
+  - first:
+      74: -6814803273937705899
+    second: group7 pCu|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -4278971473288350336
+    second: group7 pCu|pCube1 groAction_pCube1 gro
+  - first:
+      74: -2366025840968629567
+    second: group7 pCu|pCylinder1Action_pCylinder1
+  - first:
+      74: -2682076836746182980
+    second: group7 pCu|pCylinder2Action_pCylinder2
+  - first:
+      74: 8687678359554907732
+    second: group7 pCu|pCylinder3Action_pCylinder3
+  - first:
+      74: -650410799374917012
+    second: group7 pCu|pCylinder4Action_pCylinder4
+  - first:
+      74: -381894982646473020
+    second: group7 pCu|pCylinder5Action_pCylinder5
+  - first:
+      74: -7924687248229828858
+    second: group7 pCu|polySurfa1Action_polySurfa1
+  - first:
+      74: 7074627446340845576
+    second: group7 pCu|polySurfa2Action_polySurfa2
+  - first:
+      74: 4577290934231678009
+    second: group7 pCu|polySurfa3Action_polySurfa3
+  - first:
+      74: -8078003277236700189
+    second: group7 pCu|polySurfa4Action_polySurfa4
+  - first:
+      74: 3497183078249841772
+    second: group7 pCu|polySurfacAction_polySurfac
+  - first:
+      74: 659861116337604531
+    second: group7 pCu|saturnv_caAction_saturnv_ca
+  - first:
+      74: -458270825626546675
+    second: group8 pCy|group1 groAction_group1 gro
+  - first:
+      74: -7735743921331643116
+    second: group8 pCy|group1 pCoAction_group1 pCo
+  - first:
+      74: 8286713651766168060
+    second: group8 pCy|group10 pCAction_group10 pC
+  - first:
+      74: -7471958135425433744
+    second: group8 pCy|group11 pCAction_group11 pC
+  - first:
+      74: 1242986754838085420
+    second: group8 pCy|group3 groAction_group3 gro
+  - first:
+      74: 7982933231604823574
+    second: group8 pCy|group6 pCuAction_group6 pCu
+  - first:
+      74: 3597076877394089835
+    second: group8 pCy|group7 pCuAction_group7 pCu
+  - first:
+      74: -8181418029442001005
+    second: group8 pCy|group8 pCyAction_group8 pCy
+  - first:
+      74: -8569778192227954186
+    second: group8 pCy|group9 pCyAction_group9 pCy
+  - first:
+      74: 5799492027478374445
+    second: group8 pCy|pCone2 groAction_pCone2 gro
+  - first:
+      74: -4448854250163884043
+    second: group8 pCy|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -1876698429299826244
+    second: group8 pCy|pCube1 groAction_pCube1 gro
+  - first:
+      74: 7603394552783509359
+    second: group8 pCy|pCylinder1Action_pCylinder1
+  - first:
+      74: 6598770865107008836
+    second: group8 pCy|pCylinder2Action_pCylinder2
+  - first:
+      74: -8307976810422040646
+    second: group8 pCy|pCylinder3Action_pCylinder3
+  - first:
+      74: 4825441712523058791
+    second: group8 pCy|pCylinder4Action_pCylinder4
+  - first:
+      74: 7417924243574110223
+    second: group8 pCy|pCylinder5Action_pCylinder5
+  - first:
+      74: -7211939507143333234
+    second: group8 pCy|polySurfa1Action_polySurfa1
+  - first:
+      74: -2972775573837963514
+    second: group8 pCy|polySurfa2Action_polySurfa2
+  - first:
+      74: -2705097666107727615
+    second: group8 pCy|polySurfa3Action_polySurfa3
+  - first:
+      74: 5183339955376170015
+    second: group8 pCy|polySurfa4Action_polySurfa4
+  - first:
+      74: -7013516870587399987
+    second: group8 pCy|polySurfacAction_polySurfac
+  - first:
+      74: 8361944514077672597
+    second: group8 pCy|saturnv_caAction_saturnv_ca
+  - first:
+      74: -6350837792667661949
+    second: group9 pCy|group1 groAction_group1 gro
+  - first:
+      74: 4628190282150071655
+    second: group9 pCy|group1 pCoAction_group1 pCo
+  - first:
+      74: 2554972853707501661
+    second: group9 pCy|group10 pCAction_group10 pC
+  - first:
+      74: 3831320256763286041
+    second: group9 pCy|group11 pCAction_group11 pC
+  - first:
+      74: -6018502256720231708
+    second: group9 pCy|group3 groAction_group3 gro
+  - first:
+      74: -1506596965604904299
+    second: group9 pCy|group6 pCuAction_group6 pCu
+  - first:
+      74: 2652119054470628083
+    second: group9 pCy|group7 pCuAction_group7 pCu
+  - first:
+      74: 5023336317529391577
+    second: group9 pCy|group8 pCyAction_group8 pCy
+  - first:
+      74: -2087152722313909785
+    second: group9 pCy|group9 pCyAction_group9 pCy
+  - first:
+      74: -6414529825509125456
+    second: group9 pCy|pCone2 groAction_pCone2 gro
+  - first:
+      74: -1699339778844470919
+    second: group9 pCy|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 7998063679979529660
+    second: group9 pCy|pCube1 groAction_pCube1 gro
+  - first:
+      74: 8584861291692036668
+    second: group9 pCy|pCylinder1Action_pCylinder1
+  - first:
+      74: -5677564766168595027
+    second: group9 pCy|pCylinder2Action_pCylinder2
+  - first:
+      74: -3487869590624302881
+    second: group9 pCy|pCylinder3Action_pCylinder3
+  - first:
+      74: 6173928546497950668
+    second: group9 pCy|pCylinder4Action_pCylinder4
+  - first:
+      74: 8472677794337684796
+    second: group9 pCy|pCylinder5Action_pCylinder5
+  - first:
+      74: -1957729189094334687
+    second: group9 pCy|polySurfa1Action_polySurfa1
+  - first:
+      74: 3230778261068994370
+    second: group9 pCy|polySurfa2Action_polySurfa2
+  - first:
+      74: -490044691957753020
+    second: group9 pCy|polySurfa3Action_polySurfa3
+  - first:
+      74: -1241808443261269074
+    second: group9 pCy|polySurfa4Action_polySurfa4
+  - first:
+      74: 4649665846238842832
+    second: group9 pCy|polySurfacAction_polySurfac
+  - first:
+      74: 882422248303207953
+    second: group9 pCy|saturnv_caAction_saturnv_ca
+  - first:
+      74: 1101726818542072137
+    second: pCone2 gro|group1 groAction_group1 gro
+  - first:
+      74: 6870356590875955310
+    second: pCone2 gro|group1 pCoAction_group1 pCo
+  - first:
+      74: 4296955639809144368
+    second: pCone2 gro|group10 pCAction_group10 pC
+  - first:
+      74: 2017537810266767940
+    second: pCone2 gro|group11 pCAction_group11 pC
+  - first:
+      74: -6251220158601312695
+    second: pCone2 gro|group3 groAction_group3 gro
+  - first:
+      74: -3934796172993727297
+    second: pCone2 gro|group6 pCuAction_group6 pCu
+  - first:
+      74: 4290898176801413554
+    second: pCone2 gro|group7 pCuAction_group7 pCu
+  - first:
+      74: 4183529603545219215
+    second: pCone2 gro|group8 pCyAction_group8 pCy
+  - first:
+      74: 8496564271567385126
+    second: pCone2 gro|group9 pCyAction_group9 pCy
+  - first:
+      74: 3496688407630646280
+    second: pCone2 gro|pCone2 groAction_pCone2 gro
+  - first:
+      74: -1748064807287331018
+    second: pCone2 gro|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 7214820433282330637
+    second: pCone2 gro|pCube1 groAction_pCube1 gro
+  - first:
+      74: 6974774559966574067
+    second: pCone2 gro|pCylinder1Action_pCylinder1
+  - first:
+      74: 5776646964516503
+    second: pCone2 gro|pCylinder2Action_pCylinder2
+  - first:
+      74: -6180338383840602925
+    second: pCone2 gro|pCylinder3Action_pCylinder3
+  - first:
+      74: 627720486463567403
+    second: pCone2 gro|pCylinder4Action_pCylinder4
+  - first:
+      74: 4536012440731503801
+    second: pCone2 gro|pCylinder5Action_pCylinder5
+  - first:
+      74: 2777739161564345376
+    second: pCone2 gro|polySurfa1Action_polySurfa1
+  - first:
+      74: -2706760385571786967
+    second: pCone2 gro|polySurfa2Action_polySurfa2
+  - first:
+      74: 3056445631182496978
+    second: pCone2 gro|polySurfa3Action_polySurfa3
+  - first:
+      74: 1192181928779394355
+    second: pCone2 gro|polySurfa4Action_polySurfa4
+  - first:
+      74: -1778845759429461780
+    second: pCone2 gro|polySurfacAction_polySurfac
+  - first:
+      74: 6164035101412079841
+    second: pCone2 gro|saturnv_caAction_saturnv_ca
+  - first:
+      74: 6605944897141161369
+    second: pCube1 gr1|group1 groAction_group1 gro
+  - first:
+      74: 4338315393670910288
+    second: pCube1 gr1|group1 pCoAction_group1 pCo
+  - first:
+      74: -8484694191668858291
+    second: pCube1 gr1|group10 pCAction_group10 pC
+  - first:
+      74: -6235421211953119676
+    second: pCube1 gr1|group11 pCAction_group11 pC
+  - first:
+      74: 4964184542870237812
+    second: pCube1 gr1|group3 groAction_group3 gro
+  - first:
+      74: 2492026646131534359
+    second: pCube1 gr1|group6 pCuAction_group6 pCu
+  - first:
+      74: -1000430916793653065
+    second: pCube1 gr1|group7 pCuAction_group7 pCu
+  - first:
+      74: -2241360227106307638
+    second: pCube1 gr1|group8 pCyAction_group8 pCy
+  - first:
+      74: 7485578517982672832
+    second: pCube1 gr1|group9 pCyAction_group9 pCy
+  - first:
+      74: 4288228136684155269
+    second: pCube1 gr1|pCone2 groAction_pCone2 gro
+  - first:
+      74: 4650073996742149332
+    second: pCube1 gr1|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 7766815176050333130
+    second: pCube1 gr1|pCube1 groAction_pCube1 gro
+  - first:
+      74: 7342967439326602246
+    second: pCube1 gr1|pCylinder1Action_pCylinder1
+  - first:
+      74: -5105803835563328721
+    second: pCube1 gr1|pCylinder2Action_pCylinder2
+  - first:
+      74: -3554576245618114160
+    second: pCube1 gr1|pCylinder3Action_pCylinder3
+  - first:
+      74: 3733556354721590770
+    second: pCube1 gr1|pCylinder4Action_pCylinder4
+  - first:
+      74: -1698848873803315482
+    second: pCube1 gr1|pCylinder5Action_pCylinder5
+  - first:
+      74: 6211881288694217315
+    second: pCube1 gr1|polySurfa1Action_polySurfa1
+  - first:
+      74: -237130119998075027
+    second: pCube1 gr1|polySurfa2Action_polySurfa2
+  - first:
+      74: -2886648866966139712
+    second: pCube1 gr1|polySurfa3Action_polySurfa3
+  - first:
+      74: -7326412341899106648
+    second: pCube1 gr1|polySurfa4Action_polySurfa4
+  - first:
+      74: 3628796243215296894
+    second: pCube1 gr1|polySurfacAction_polySurfac
+  - first:
+      74: -6690466419896003176
+    second: pCube1 gr1|saturnv_caAction_saturnv_ca
+  - first:
+      74: -7274238387091414085
+    second: pCube1 gro|group1 groAction_group1 gro
+  - first:
+      74: -1120126347546178291
+    second: pCube1 gro|group1 pCoAction_group1 pCo
+  - first:
+      74: -2579349157635096124
+    second: pCube1 gro|group10 pCAction_group10 pC
+  - first:
+      74: -4230257231356738818
+    second: pCube1 gro|group11 pCAction_group11 pC
+  - first:
+      74: 5569048563018761221
+    second: pCube1 gro|group3 groAction_group3 gro
+  - first:
+      74: 2278009664088600005
+    second: pCube1 gro|group6 pCuAction_group6 pCu
+  - first:
+      74: 239086976864144616
+    second: pCube1 gro|group7 pCuAction_group7 pCu
+  - first:
+      74: 6883769520575397808
+    second: pCube1 gro|group8 pCyAction_group8 pCy
+  - first:
+      74: 9174524226802349834
+    second: pCube1 gro|group9 pCyAction_group9 pCy
+  - first:
+      74: -681024630656398039
+    second: pCube1 gro|pCone2 groAction_pCone2 gro
+  - first:
+      74: 476975064018147416
+    second: pCube1 gro|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -1673234315952910046
+    second: pCube1 gro|pCube1 groAction_pCube1 gro
+  - first:
+      74: -6645730288290212000
+    second: pCube1 gro|pCylinder1Action_pCylinder1
+  - first:
+      74: -8397461933773842252
+    second: pCube1 gro|pCylinder2Action_pCylinder2
+  - first:
+      74: -8781090775218361851
+    second: pCube1 gro|pCylinder3Action_pCylinder3
+  - first:
+      74: -2979962074737821461
+    second: pCube1 gro|pCylinder4Action_pCylinder4
+  - first:
+      74: -3889447945824212788
+    second: pCube1 gro|pCylinder5Action_pCylinder5
+  - first:
+      74: 449310700922976119
+    second: pCube1 gro|polySurfa1Action_polySurfa1
+  - first:
+      74: 1422686410696980492
+    second: pCube1 gro|polySurfa2Action_polySurfa2
+  - first:
+      74: 6170495213191984494
+    second: pCube1 gro|polySurfa3Action_polySurfa3
+  - first:
+      74: 9128369305916741772
+    second: pCube1 gro|polySurfa4Action_polySurfa4
+  - first:
+      74: 5887525047400464268
+    second: pCube1 gro|polySurfacAction_polySurfac
+  - first:
+      74: 5111868408681658838
+    second: pCube1 gro|saturnv_caAction_saturnv_ca
+  - first:
+      74: -5749654032209193462
+    second: pCylinder1|group1 groAction_group1 gro
+  - first:
+      74: 1881315498861088421
+    second: pCylinder1|group1 pCoAction_group1 pCo
+  - first:
+      74: 7655618580389557683
+    second: pCylinder1|group10 pCAction_group10 pC
+  - first:
+      74: 7743309038941547476
+    second: pCylinder1|group11 pCAction_group11 pC
+  - first:
+      74: -9173189298702193069
+    second: pCylinder1|group3 groAction_group3 gro
+  - first:
+      74: -7345013271628989696
+    second: pCylinder1|group6 pCuAction_group6 pCu
+  - first:
+      74: 6152538975473534625
+    second: pCylinder1|group7 pCuAction_group7 pCu
+  - first:
+      74: -8456943164820965632
+    second: pCylinder1|group8 pCyAction_group8 pCy
+  - first:
+      74: -4993269972483623013
+    second: pCylinder1|group9 pCyAction_group9 pCy
+  - first:
+      74: -7833265250279556816
+    second: pCylinder1|pCone2 groAction_pCone2 gro
+  - first:
+      74: -5410191442127005147
+    second: pCylinder1|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -7021398051292688199
+    second: pCylinder1|pCube1 groAction_pCube1 gro
+  - first:
+      74: -2989482690468293044
+    second: pCylinder1|pCylinder1Action_pCylinder1
+  - first:
+      74: -6081031136743956237
+    second: pCylinder1|pCylinder2Action_pCylinder2
+  - first:
+      74: -3081500623946609100
+    second: pCylinder1|pCylinder3Action_pCylinder3
+  - first:
+      74: -7419508177609257823
+    second: pCylinder1|pCylinder4Action_pCylinder4
+  - first:
+      74: -6007931373656590775
+    second: pCylinder1|pCylinder5Action_pCylinder5
+  - first:
+      74: 5868528810639044898
+    second: pCylinder1|polySurfa1Action_polySurfa1
+  - first:
+      74: -3389449973921506900
+    second: pCylinder1|polySurfa2Action_polySurfa2
+  - first:
+      74: -5624699347400395267
+    second: pCylinder1|polySurfa3Action_polySurfa3
+  - first:
+      74: -2934751556202649717
+    second: pCylinder1|polySurfa4Action_polySurfa4
+  - first:
+      74: -2781961957936109354
+    second: pCylinder1|polySurfacAction_polySurfac
+  - first:
+      74: -2953223010398772907
+    second: pCylinder1|saturnv_caAction_saturnv_ca
+  - first:
+      74: -624338331141331093
+    second: pCylinder2|group1 groAction_group1 gro
+  - first:
+      74: -6482127149964238762
+    second: pCylinder2|group1 pCoAction_group1 pCo
+  - first:
+      74: -355143377256029056
+    second: pCylinder2|group10 pCAction_group10 pC
+  - first:
+      74: -2135400490345971788
+    second: pCylinder2|group11 pCAction_group11 pC
+  - first:
+      74: -46184440894899738
+    second: pCylinder2|group3 groAction_group3 gro
+  - first:
+      74: -2321291323973644752
+    second: pCylinder2|group6 pCuAction_group6 pCu
+  - first:
+      74: 1256012408545066960
+    second: pCylinder2|group7 pCuAction_group7 pCu
+  - first:
+      74: 2418748131333866359
+    second: pCylinder2|group8 pCyAction_group8 pCy
+  - first:
+      74: -819967565071494194
+    second: pCylinder2|group9 pCyAction_group9 pCy
+  - first:
+      74: -9221818253474082133
+    second: pCylinder2|pCone2 groAction_pCone2 gro
+  - first:
+      74: -4353264113202864751
+    second: pCylinder2|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 2485147024799891798
+    second: pCylinder2|pCube1 groAction_pCube1 gro
+  - first:
+      74: 853651056385963376
+    second: pCylinder2|pCylinder1Action_pCylinder1
+  - first:
+      74: 6569450719089013573
+    second: pCylinder2|pCylinder2Action_pCylinder2
+  - first:
+      74: 9051142161528945100
+    second: pCylinder2|pCylinder3Action_pCylinder3
+  - first:
+      74: -2695647313599627689
+    second: pCylinder2|pCylinder4Action_pCylinder4
+  - first:
+      74: -7438618435444223570
+    second: pCylinder2|pCylinder5Action_pCylinder5
+  - first:
+      74: -1362482787717259860
+    second: pCylinder2|polySurfa1Action_polySurfa1
+  - first:
+      74: 2181597534355236183
+    second: pCylinder2|polySurfa2Action_polySurfa2
+  - first:
+      74: -7426811695626450738
+    second: pCylinder2|polySurfa3Action_polySurfa3
+  - first:
+      74: -7246372384523351889
+    second: pCylinder2|polySurfa4Action_polySurfa4
+  - first:
+      74: 2513720287511392481
+    second: pCylinder2|polySurfacAction_polySurfac
+  - first:
+      74: -7117422852841716846
+    second: pCylinder2|saturnv_caAction_saturnv_ca
+  - first:
+      74: -558018082283505152
+    second: pCylinder3|group1 groAction_group1 gro
+  - first:
+      74: 429378201347170339
+    second: pCylinder3|group1 pCoAction_group1 pCo
+  - first:
+      74: 5830090665247670200
+    second: pCylinder3|group10 pCAction_group10 pC
+  - first:
+      74: 8821228928428235355
+    second: pCylinder3|group11 pCAction_group11 pC
+  - first:
+      74: -6118989204848899185
+    second: pCylinder3|group3 groAction_group3 gro
+  - first:
+      74: 1617085233372833810
+    second: pCylinder3|group6 pCuAction_group6 pCu
+  - first:
+      74: -7023249331539105724
+    second: pCylinder3|group7 pCuAction_group7 pCu
+  - first:
+      74: -8602694772955590832
+    second: pCylinder3|group8 pCyAction_group8 pCy
+  - first:
+      74: -3377679180326644523
+    second: pCylinder3|group9 pCyAction_group9 pCy
+  - first:
+      74: 7366615903940679813
+    second: pCylinder3|pCone2 groAction_pCone2 gro
+  - first:
+      74: 6928519875282846517
+    second: pCylinder3|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 9064603369433437532
+    second: pCylinder3|pCube1 groAction_pCube1 gro
+  - first:
+      74: 2054071357075382877
+    second: pCylinder3|pCylinder1Action_pCylinder1
+  - first:
+      74: 4034848432917194383
+    second: pCylinder3|pCylinder2Action_pCylinder2
+  - first:
+      74: -2563134746496446017
+    second: pCylinder3|pCylinder3Action_pCylinder3
+  - first:
+      74: 996207054385048816
+    second: pCylinder3|pCylinder4Action_pCylinder4
+  - first:
+      74: 6480343229897896491
+    second: pCylinder3|pCylinder5Action_pCylinder5
+  - first:
+      74: -6600387967670379131
+    second: pCylinder3|polySurfa1Action_polySurfa1
+  - first:
+      74: -7181523213094917476
+    second: pCylinder3|polySurfa2Action_polySurfa2
+  - first:
+      74: 1733325745037307812
+    second: pCylinder3|polySurfa3Action_polySurfa3
+  - first:
+      74: -1547161702622533923
+    second: pCylinder3|polySurfa4Action_polySurfa4
+  - first:
+      74: -2757178538060517219
+    second: pCylinder3|polySurfacAction_polySurfac
+  - first:
+      74: -3766717962914779658
+    second: pCylinder3|saturnv_caAction_saturnv_ca
+  - first:
+      74: 6483983268955275173
+    second: pCylinder4|group1 groAction_group1 gro
+  - first:
+      74: -3456646690328749833
+    second: pCylinder4|group1 pCoAction_group1 pCo
+  - first:
+      74: 7799169146614106371
+    second: pCylinder4|group10 pCAction_group10 pC
+  - first:
+      74: -3407587045659897108
+    second: pCylinder4|group11 pCAction_group11 pC
+  - first:
+      74: 4014951506498348401
+    second: pCylinder4|group3 groAction_group3 gro
+  - first:
+      74: 7295219942466966500
+    second: pCylinder4|group6 pCuAction_group6 pCu
+  - first:
+      74: -7300998205838458805
+    second: pCylinder4|group7 pCuAction_group7 pCu
+  - first:
+      74: 6714487943446950718
+    second: pCylinder4|group8 pCyAction_group8 pCy
+  - first:
+      74: 6007071569771902590
+    second: pCylinder4|group9 pCyAction_group9 pCy
+  - first:
+      74: 7793905160294929284
+    second: pCylinder4|pCone2 groAction_pCone2 gro
+  - first:
+      74: 797176701487903829
+    second: pCylinder4|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -989522630305263302
+    second: pCylinder4|pCube1 groAction_pCube1 gro
+  - first:
+      74: 3457641580016454218
+    second: pCylinder4|pCylinder1Action_pCylinder1
+  - first:
+      74: -4310765169941422979
+    second: pCylinder4|pCylinder2Action_pCylinder2
+  - first:
+      74: 3598959166709722451
+    second: pCylinder4|pCylinder3Action_pCylinder3
+  - first:
+      74: 2848004571458802558
+    second: pCylinder4|pCylinder4Action_pCylinder4
+  - first:
+      74: 2242871814381094945
+    second: pCylinder4|pCylinder5Action_pCylinder5
+  - first:
+      74: 2055617126963692170
+    second: pCylinder4|polySurfa1Action_polySurfa1
+  - first:
+      74: -6690343809549624470
+    second: pCylinder4|polySurfa2Action_polySurfa2
+  - first:
+      74: 30064872899410952
+    second: pCylinder4|polySurfa3Action_polySurfa3
+  - first:
+      74: -7327053198589438919
+    second: pCylinder4|polySurfa4Action_polySurfa4
+  - first:
+      74: 8952442139712142274
+    second: pCylinder4|polySurfacAction_polySurfac
+  - first:
+      74: -6834054430154780003
+    second: pCylinder4|saturnv_caAction_saturnv_ca
+  - first:
+      74: 6564569367307510472
+    second: pCylinder5|group1 groAction_group1 gro
+  - first:
+      74: 2000744586758305757
+    second: pCylinder5|group1 pCoAction_group1 pCo
+  - first:
+      74: 344309647848506339
+    second: pCylinder5|group10 pCAction_group10 pC
+  - first:
+      74: -8935439444677968520
+    second: pCylinder5|group11 pCAction_group11 pC
+  - first:
+      74: 7206768968091531942
+    second: pCylinder5|group3 groAction_group3 gro
+  - first:
+      74: 3265720570310714598
+    second: pCylinder5|group6 pCuAction_group6 pCu
+  - first:
+      74: -8891484716990691498
+    second: pCylinder5|group7 pCuAction_group7 pCu
+  - first:
+      74: -2173765913045088449
+    second: pCylinder5|group8 pCyAction_group8 pCy
+  - first:
+      74: 625741697968168226
+    second: pCylinder5|group9 pCyAction_group9 pCy
+  - first:
+      74: 7978406567139298626
+    second: pCylinder5|pCone2 groAction_pCone2 gro
+  - first:
+      74: 5909833058934693670
+    second: pCylinder5|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -7955707736575518330
+    second: pCylinder5|pCube1 groAction_pCube1 gro
+  - first:
+      74: 7895790032747650418
+    second: pCylinder5|pCylinder1Action_pCylinder1
+  - first:
+      74: -853016254537381288
+    second: pCylinder5|pCylinder2Action_pCylinder2
+  - first:
+      74: -956427870353188870
+    second: pCylinder5|pCylinder3Action_pCylinder3
+  - first:
+      74: 1882809358487699630
+    second: pCylinder5|pCylinder4Action_pCylinder4
+  - first:
+      74: -1302310808739257792
+    second: pCylinder5|pCylinder5Action_pCylinder5
+  - first:
+      74: -1654514195098707286
+    second: pCylinder5|polySurfa1Action_polySurfa1
+  - first:
+      74: 4388564699679821373
+    second: pCylinder5|polySurfa2Action_polySurfa2
+  - first:
+      74: -6828577296307218844
+    second: pCylinder5|polySurfa3Action_polySurfa3
+  - first:
+      74: 171838679633249841
+    second: pCylinder5|polySurfa4Action_polySurfa4
+  - first:
+      74: 2942611038954791692
+    second: pCylinder5|polySurfacAction_polySurfac
+  - first:
+      74: -7899166469656374195
+    second: pCylinder5|saturnv_caAction_saturnv_ca
+  - first:
+      74: -8259762227464265641
+    second: polySurfa1|group1 groAction_group1 gro
+  - first:
+      74: 6946393193141504967
+    second: polySurfa1|group1 pCoAction_group1 pCo
+  - first:
+      74: 9121742010842737117
+    second: polySurfa1|group10 pCAction_group10 pC
+  - first:
+      74: 8795401764854957204
+    second: polySurfa1|group11 pCAction_group11 pC
+  - first:
+      74: -4454808423785853081
+    second: polySurfa1|group3 groAction_group3 gro
+  - first:
+      74: -2972270855750577951
+    second: polySurfa1|group6 pCuAction_group6 pCu
+  - first:
+      74: -5145904095059838590
+    second: polySurfa1|group7 pCuAction_group7 pCu
+  - first:
+      74: 5907049586486880934
+    second: polySurfa1|group8 pCyAction_group8 pCy
+  - first:
+      74: 7618460448965790399
+    second: polySurfa1|group9 pCyAction_group9 pCy
+  - first:
+      74: 3845846688632369219
+    second: polySurfa1|pCone2 groAction_pCone2 gro
+  - first:
+      74: -6876271842268368745
+    second: polySurfa1|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -2412831942568422331
+    second: polySurfa1|pCube1 groAction_pCube1 gro
+  - first:
+      74: 2092639834867799036
+    second: polySurfa1|pCylinder1Action_pCylinder1
+  - first:
+      74: -3928489584841538287
+    second: polySurfa1|pCylinder2Action_pCylinder2
+  - first:
+      74: -1082767339585300810
+    second: polySurfa1|pCylinder3Action_pCylinder3
+  - first:
+      74: -3860947343996687894
+    second: polySurfa1|pCylinder4Action_pCylinder4
+  - first:
+      74: -8028199641055012186
+    second: polySurfa1|pCylinder5Action_pCylinder5
+  - first:
+      74: 8647163968556152347
+    second: polySurfa1|polySurfa1Action_polySurfa1
+  - first:
+      74: -540066111948461815
+    second: polySurfa1|polySurfa2Action_polySurfa2
+  - first:
+      74: 3891979981715665306
+    second: polySurfa1|polySurfa3Action_polySurfa3
+  - first:
+      74: 7236958423279829666
+    second: polySurfa1|polySurfa4Action_polySurfa4
+  - first:
+      74: 977937496686982884
+    second: polySurfa1|polySurfacAction_polySurfac
+  - first:
+      74: 182853870842713448
+    second: polySurfa1|saturnv_caAction_saturnv_ca
+  - first:
+      74: 3730600250844210452
+    second: polySurfa2|group1 groAction_group1 gro
+  - first:
+      74: -826830707913873729
+    second: polySurfa2|group1 pCoAction_group1 pCo
+  - first:
+      74: -8342635003061178285
+    second: polySurfa2|group10 pCAction_group10 pC
+  - first:
+      74: -5064648061366374268
+    second: polySurfa2|group11 pCAction_group11 pC
+  - first:
+      74: -1283564293887134030
+    second: polySurfa2|group3 groAction_group3 gro
+  - first:
+      74: 3931383566324042890
+    second: polySurfa2|group6 pCuAction_group6 pCu
+  - first:
+      74: -3564980623499941667
+    second: polySurfa2|group7 pCuAction_group7 pCu
+  - first:
+      74: 8332498470293299709
+    second: polySurfa2|group8 pCyAction_group8 pCy
+  - first:
+      74: 8067296762262511429
+    second: polySurfa2|group9 pCyAction_group9 pCy
+  - first:
+      74: -7176708689783742347
+    second: polySurfa2|pCone2 groAction_pCone2 gro
+  - first:
+      74: -6563430963127814363
+    second: polySurfa2|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -5364185188536954222
+    second: polySurfa2|pCube1 groAction_pCube1 gro
+  - first:
+      74: 4764901732545054429
+    second: polySurfa2|pCylinder1Action_pCylinder1
+  - first:
+      74: -4494269473371526359
+    second: polySurfa2|pCylinder2Action_pCylinder2
+  - first:
+      74: 3068198338853695299
+    second: polySurfa2|pCylinder3Action_pCylinder3
+  - first:
+      74: 1438677427989243352
+    second: polySurfa2|pCylinder4Action_pCylinder4
+  - first:
+      74: -8498826224118568073
+    second: polySurfa2|pCylinder5Action_pCylinder5
+  - first:
+      74: -4457965932184299203
+    second: polySurfa2|polySurfa1Action_polySurfa1
+  - first:
+      74: 9039113477366475023
+    second: polySurfa2|polySurfa2Action_polySurfa2
+  - first:
+      74: 3109851820642140078
+    second: polySurfa2|polySurfa3Action_polySurfa3
+  - first:
+      74: -7439732600460221334
+    second: polySurfa2|polySurfa4Action_polySurfa4
+  - first:
+      74: -2128258865435298086
+    second: polySurfa2|polySurfacAction_polySurfac
+  - first:
+      74: -3320054864902606549
+    second: polySurfa2|saturnv_caAction_saturnv_ca
+  - first:
+      74: 8547300317202418388
+    second: polySurfa3|group1 groAction_group1 gro
+  - first:
+      74: -1377790140509850926
+    second: polySurfa3|group1 pCoAction_group1 pCo
+  - first:
+      74: 7678467603702717497
+    second: polySurfa3|group10 pCAction_group10 pC
+  - first:
+      74: 425230276538525776
+    second: polySurfa3|group11 pCAction_group11 pC
+  - first:
+      74: -6679959467048812428
+    second: polySurfa3|group3 groAction_group3 gro
+  - first:
+      74: -299834698971975304
+    second: polySurfa3|group6 pCuAction_group6 pCu
+  - first:
+      74: 184911434064332992
+    second: polySurfa3|group7 pCuAction_group7 pCu
+  - first:
+      74: 8648342581490092490
+    second: polySurfa3|group8 pCyAction_group8 pCy
+  - first:
+      74: 3454425910238530408
+    second: polySurfa3|group9 pCyAction_group9 pCy
+  - first:
+      74: -9000742042008654957
+    second: polySurfa3|pCone2 groAction_pCone2 gro
+  - first:
+      74: 4525210787999817937
+    second: polySurfa3|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 7431188806900328024
+    second: polySurfa3|pCube1 groAction_pCube1 gro
+  - first:
+      74: -6448056169103538818
+    second: polySurfa3|pCylinder1Action_pCylinder1
+  - first:
+      74: -4121017768170205658
+    second: polySurfa3|pCylinder2Action_pCylinder2
+  - first:
+      74: 3762826903143848645
+    second: polySurfa3|pCylinder3Action_pCylinder3
+  - first:
+      74: -1377758563976375756
+    second: polySurfa3|pCylinder4Action_pCylinder4
+  - first:
+      74: 8669515337290875415
+    second: polySurfa3|pCylinder5Action_pCylinder5
+  - first:
+      74: -8668863653788341824
+    second: polySurfa3|polySurfa1Action_polySurfa1
+  - first:
+      74: 3618719282029182260
+    second: polySurfa3|polySurfa2Action_polySurfa2
+  - first:
+      74: -4543504273255703354
+    second: polySurfa3|polySurfa3Action_polySurfa3
+  - first:
+      74: 5285727489063517377
+    second: polySurfa3|polySurfa4Action_polySurfa4
+  - first:
+      74: -5482763114142398694
+    second: polySurfa3|polySurfacAction_polySurfac
+  - first:
+      74: 4799116467023652786
+    second: polySurfa3|saturnv_caAction_saturnv_ca
+  - first:
+      74: -260786621610204386
+    second: polySurfa4|group1 groAction_group1 gro
+  - first:
+      74: 5174510954802149309
+    second: polySurfa4|group1 pCoAction_group1 pCo
+  - first:
+      74: -6435927174620300631
+    second: polySurfa4|group10 pCAction_group10 pC
+  - first:
+      74: -7745072271981246252
+    second: polySurfa4|group11 pCAction_group11 pC
+  - first:
+      74: 6226599829107826203
+    second: polySurfa4|group3 groAction_group3 gro
+  - first:
+      74: -7681509674222982212
+    second: polySurfa4|group6 pCuAction_group6 pCu
+  - first:
+      74: -5750905378867165602
+    second: polySurfa4|group7 pCuAction_group7 pCu
+  - first:
+      74: 2140963803914978462
+    second: polySurfa4|group8 pCyAction_group8 pCy
+  - first:
+      74: -4373429166069873658
+    second: polySurfa4|group9 pCyAction_group9 pCy
+  - first:
+      74: -5365751456550307105
+    second: polySurfa4|pCone2 groAction_pCone2 gro
+  - first:
+      74: -1455147970213202439
+    second: polySurfa4|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: -2428159870792745643
+    second: polySurfa4|pCube1 groAction_pCube1 gro
+  - first:
+      74: -6752973284617502777
+    second: polySurfa4|pCylinder1Action_pCylinder1
+  - first:
+      74: 2388031068606348266
+    second: polySurfa4|pCylinder2Action_pCylinder2
+  - first:
+      74: -2287622141443759903
+    second: polySurfa4|pCylinder3Action_pCylinder3
+  - first:
+      74: 70677587392977750
+    second: polySurfa4|pCylinder4Action_pCylinder4
+  - first:
+      74: 6004332757377038944
+    second: polySurfa4|pCylinder5Action_pCylinder5
+  - first:
+      74: -6100741558128758850
+    second: polySurfa4|polySurfa1Action_polySurfa1
+  - first:
+      74: 5972259940001629415
+    second: polySurfa4|polySurfa2Action_polySurfa2
+  - first:
+      74: -8745050960638555161
+    second: polySurfa4|polySurfa3Action_polySurfa3
+  - first:
+      74: -3423896711710522093
+    second: polySurfa4|polySurfa4Action_polySurfa4
+  - first:
+      74: 1266078490039730773
+    second: polySurfa4|polySurfacAction_polySurfac
+  - first:
+      74: 1730714251407634328
+    second: polySurfa4|saturnv_caAction_saturnv_ca
+  - first:
+      74: 8481413180700161364
+    second: polySurfac|group1 groAction_group1 gro
+  - first:
+      74: -8862812912541581105
+    second: polySurfac|group1 pCoAction_group1 pCo
+  - first:
+      74: 5860867458341572912
+    second: polySurfac|group10 pCAction_group10 pC
+  - first:
+      74: 6181413504421430375
+    second: polySurfac|group11 pCAction_group11 pC
+  - first:
+      74: 470258320551852550
+    second: polySurfac|group3 groAction_group3 gro
+  - first:
+      74: -4958567463343011586
+    second: polySurfac|group6 pCuAction_group6 pCu
+  - first:
+      74: -7350519867109889481
+    second: polySurfac|group7 pCuAction_group7 pCu
+  - first:
+      74: -2667825048618133921
+    second: polySurfac|group8 pCyAction_group8 pCy
+  - first:
+      74: 3718479277870557256
+    second: polySurfac|group9 pCyAction_group9 pCy
+  - first:
+      74: -4235888381217448375
+    second: polySurfac|pCone2 groAction_pCone2 gro
+  - first:
+      74: 6616018672017990814
+    second: polySurfac|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 2974474520292182304
+    second: polySurfac|pCube1 groAction_pCube1 gro
+  - first:
+      74: -5958733929145784471
+    second: polySurfac|pCylinder1Action_pCylinder1
+  - first:
+      74: -5721927068676905705
+    second: polySurfac|pCylinder2Action_pCylinder2
+  - first:
+      74: -4438886129198125828
+    second: polySurfac|pCylinder3Action_pCylinder3
+  - first:
+      74: -988871364908414520
+    second: polySurfac|pCylinder4Action_pCylinder4
+  - first:
+      74: -7740679266001735562
+    second: polySurfac|pCylinder5Action_pCylinder5
+  - first:
+      74: 5528454135328832039
+    second: polySurfac|polySurfa1Action_polySurfa1
+  - first:
+      74: -13763938646171535
+    second: polySurfac|polySurfa2Action_polySurfa2
+  - first:
+      74: 5397547027190445166
+    second: polySurfac|polySurfa3Action_polySurfa3
+  - first:
+      74: -1331770195405153290
+    second: polySurfac|polySurfa4Action_polySurfa4
+  - first:
+      74: 5819406913482019720
+    second: polySurfac|polySurfacAction_polySurfac
+  - first:
+      74: -2750221325632779752
+    second: polySurfac|saturnv_caAction_saturnv_ca
+  - first:
+      74: 1582807714185198589
+    second: saturnv_ca|group1 groAction_group1 gro
+  - first:
+      74: 4181865388585096107
+    second: saturnv_ca|group1 pCoAction_group1 pCo
+  - first:
+      74: -5683226668911287118
+    second: saturnv_ca|group10 pCAction_group10 pC
+  - first:
+      74: -2230609632158890278
+    second: saturnv_ca|group11 pCAction_group11 pC
+  - first:
+      74: -1592700944744644908
+    second: saturnv_ca|group3 groAction_group3 gro
+  - first:
+      74: 8268868394757125469
+    second: saturnv_ca|group6 pCuAction_group6 pCu
+  - first:
+      74: -842813669739597576
+    second: saturnv_ca|group7 pCuAction_group7 pCu
+  - first:
+      74: 7139569971752180866
+    second: saturnv_ca|group8 pCyAction_group8 pCy
+  - first:
+      74: -6591704461058178478
+    second: saturnv_ca|group9 pCyAction_group9 pCy
+  - first:
+      74: 8929606542726572165
+    second: saturnv_ca|pCone2 groAction_pCone2 gro
+  - first:
+      74: 2476699920494036586
+    second: saturnv_ca|pCube1 gr1Action_pCube1 gr1
+  - first:
+      74: 6517726896784593977
+    second: saturnv_ca|pCube1 groAction_pCube1 gro
+  - first:
+      74: -3460145878109809922
+    second: saturnv_ca|pCylinder1Action_pCylinder1
+  - first:
+      74: 5509397547102377849
+    second: saturnv_ca|pCylinder2Action_pCylinder2
+  - first:
+      74: -1104998073966341868
+    second: saturnv_ca|pCylinder3Action_pCylinder3
+  - first:
+      74: -1246957120799686200
+    second: saturnv_ca|pCylinder4Action_pCylinder4
+  - first:
+      74: 8883634028783036574
+    second: saturnv_ca|pCylinder5Action_pCylinder5
+  - first:
+      74: -3562896841825108348
+    second: saturnv_ca|polySurfa1Action_polySurfa1
+  - first:
+      74: 6715050962262889594
+    second: saturnv_ca|polySurfa2Action_polySurfa2
+  - first:
+      74: 8743251092348327918
+    second: saturnv_ca|polySurfa3Action_polySurfa3
+  - first:
+      74: 4080165670766956233
+    second: saturnv_ca|polySurfa4Action_polySurfa4
+  - first:
+      74: 4754890990948492628
+    second: saturnv_ca|polySurfacAction_polySurfac
+  - first:
+      74: -8416299202742565892
+    second: saturnv_ca|saturnv_caAction_saturnv_ca
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

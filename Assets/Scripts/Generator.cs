@@ -1,0 +1,149 @@
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+
+public enum DisplayMode
+{
+    [Header("未定义")]
+    None = 0,
+    [Header("固定排列")]
+    Fix = 1,
+    [Header("自定义位置")]
+    General = 2,
+    [Header("只展示一个")]
+    OnlyOne = 3,
+}
+
+public class Generator : MonoBehaviour
+{
+#if UNITY_EDITOR
+    [EnumLabel("生成方式")]
+#endif
+    public DisplayMode Mode = DisplayMode.OnlyOne;
+    public int Row = 2;
+    public int Col = 20;
+    public float RowInterval = 10f;
+    public float ColInterval = 5f;
+    public Vector3 UniquePosition;
+    private int uniqueIdx = 0;
+
+    public List<GameObject> Prefabs;
+    public GameObject PanelPrefab;
+    public GameObject TablePrefab;
+    public Transform WorldRoot;
+    public Transform ModelRoot;
+
+    public List<GameObject> ModelList = new List<GameObject>();
+    public List<GameObject> TableList = new List<GameObject>();
+    public List<GameObject> PanelList = new List<GameObject>();
+
+    private void Start()
+    {
+        Init();
+        if (Mode == DisplayMode.Fix) FixedGenerate();
+        else if (Mode == DisplayMode.OnlyOne) GenerateOne(0);
+    }
+
+    private void AddExtraModels()
+    {
+        string path = Application.dataPath + "/Resources/PrefabPlus/";
+        if (Directory.Exists(path))
+        {
+            DirectoryInfo direction = new DirectoryInfo(path);
+            FileInfo[] files = direction.GetFiles("*");
+            for (int i = 0; i < files.Length; i++)
+            {
+                if (files[i].Name.EndsWith(".meta")) continue;
+                string localPath = "PrefabPlus/" + files[i].Name.Split('.')[0];
+                GameObject go = Resources.Load<GameObject>(localPath);
+                Prefabs.Add(go);
+            }
+        }
+    }
+
+    private void Init()
+    {
+        AddExtraModels();
+        UIManager.Instance.RefreshWorldPanels(PanelList);
+        for(int i = 0; i < Prefabs.Count; i++)
+            Prefabs[i].GetComponent<Model>().Index = i;
+    }
+
+    private void FixedGenerate()
+    {
+        for (int i = 0; i < Row; i++)
+        {
+            for (int j = 0; j < Col; j++)
+            {
+                Generate(i, 0, j, i * Col + j, true);
+            }
+        }
+    }
+
+    public void GenerateOne(int idx = -1)
+    {
+        Clear();
+        if (idx == -1) uniqueIdx++;
+        else uniqueIdx = idx;
+        Generate(UniquePosition, uniqueIdx);
+    }
+
+    public void Generate(Vector3 pos, int idx)
+    {
+        Generate(pos.x, pos.y, pos.z, idx);
+    }
+
+    public void Generate(float x, float y, float z, int idx, bool fixedPos = false)
+    {
+        GameObject table = Instantiate(TablePrefab, ModelRoot); //HACK 展台弃用了，目前隐藏掉了mesh，等确定下来把代码清一下
+        TableList.Add(table);
+
+        GameObject model = Instantiate(Prefabs[idx % Prefabs.Count], ModelRoot);
+        MeshRenderer[] mesh = model.GetComponentsInChildren<MeshRenderer>();
+        float maxRadius = 0;
+        for (int k = 0; k < mesh.Length; k++)
+        {
+            Vector3 size = mesh[k].bounds.size;
+            maxRadius = Mathf.Max(maxRadius, size.x, size.y, size.z);
+        }
+        SkinnedMeshRenderer[] skin = model.GetComponentsInChildren<SkinnedMeshRenderer>();
+        for (int k = 0; k < skin.Length; k++)
+        {
+            Vector3 size = skin[k].bounds.size;
+            maxRadius = Mathf.Max(maxRadius, size.x, size.y, size.z);
+        }
+        if (maxRadius != 0) model.transform.localScale = 1f / maxRadius * Vector3.one;
+        SphereCollider collider = model.AddComponent<SphereCollider>();
+        collider.radius *= maxRadius;
+        ModelList.Add(model);
+
+        GameObject panel = Instantiate(PanelPrefab, WorldRoot);
+        PanelList.Add(panel);
+        Vector3 pos = new Vector3(x, y, z);
+        if (fixedPos) pos = Mul(pos, new Vector3(RowInterval, 1f, ColInterval));
+        table.transform.position = pos + Vector3.up * 1f;
+        model.transform.position = pos + Vector3.up * 2.5f;
+        panel.transform.position = pos + Vector3.up * 4.5f;
+
+        string str = "Content/" + model.GetComponent<Model>().Name + "_0";
+        string path = Application.dataPath + "/Resources/" + str + ".txt";
+        if (File.Exists(path)) //HACK 临时保护
+            str = Resources.Load<TextAsset>(str).text;
+        else
+            str = "样例标题\n样例正文";
+        panel.GetComponent<WorldPanel>().SetContent(str);
+        UIManager.Instance.RefreshWorldPanels(PanelList);
+    }
+
+    public void Clear()
+    {
+        foreach(GameObject go in ModelList) DestroyImmediate(go);
+        foreach(GameObject go in TableList) DestroyImmediate(go);
+        foreach(GameObject go in PanelList) DestroyImmediate(go);
+        ModelList.Clear();
+        TableList.Clear();
+        PanelList.Clear();
+    }
+
+    private Vector3 Mul(Vector3 a, Vector3 b) => new Vector3(a.x * b.x, a.y * b.y, a.z * b.z);
+}
