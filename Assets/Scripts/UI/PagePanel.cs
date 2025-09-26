@@ -1,45 +1,78 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.IO;
 
-public class SelectItem : BasePanel
+public class PagePanel : BasePanel
 {
-    public Image Icon;
-    public Vector3 Destination;
-
-    private Model model;
-    private Button Navigate;
+    [SerializeField]
+    private Button Close, Prev, Next, Confirm;
+    [SerializeField]
+    private Image Icon;
+    private bool hasInit = false;
+    private int currentIdx = 0;
+    private List<GameObject> modelList;
 
     private void Start()
     {
-        Navigate = GetComponent<Button>();
-        Navigate.onClick.AddListener(OnClickNavigate);
+        EventHandler.OnOpenPagePanel += (show) =>
+        {
+            gameObject.SetActive(show);
+            if (show && !hasInit) Init();
+        };
+        gameObject.SetActive(false);
     }
 
-    public void Init(Model model)
+    public void Init()
     {
-        this.model = model;
-        Destination = model.transform.position;
-        Icon.sprite = model.Icon;
-        string str = "Content/" + model.Name + "_0";
+        SetupButton(Close);
+        modelList = CameraManager.Instance.Generator.Prefabs;
+        Close.onClick.AddListener(() =>
+        {
+            gameObject.SetActive(false);
+        });
+        Prev.onClick.AddListener(() =>
+        {
+            currentIdx--;
+            currentIdx = (currentIdx + modelList.Count) % modelList.Count;
+            OnSwitchPage();
+        });
+        Next.onClick.AddListener(() =>
+        {
+            currentIdx++;
+            currentIdx %= modelList.Count;
+            OnSwitchPage();
+        });
+        Confirm.onClick.AddListener(() =>
+        {
+            Model model = modelList[currentIdx].GetComponent<Model>();
+            CameraManager.Instance.Generator.GenerateOne(model.Index);
+            EventHandler.CallOpenPagePanel(false);
+        });
+        OnSwitchPage();
+        gameObject.SetActive(true);
+        hasInit = true;
+    }
+
+    private void OnSwitchPage()
+    {
+        Model model = modelList[currentIdx].GetComponent<Model>();
+        string str = "Content/" + model.Name + "_1";
         string path = Application.dataPath + "/Resources/" + str + ".txt";
         if (File.Exists(path)) //HACK 临时保护
             str = Resources.Load<TextAsset>(str).text;
         else
             str = "样例标题\n样例正文";
         SetContent(str);
-        SetupButton();
+        Icon.sprite = model.Icon;
     }
 
-    private void SetupButton()
+    private void SetupButton(Button button)
     {
-        Button button = GetComponent<Button>();
-        Image btnImage = gameObject.GetComponent<Image>();
+        Image btnImage = button.GetComponent<Image>();
         if (btnImage == null)
-            btnImage = gameObject.AddComponent<Image>();
+            btnImage = button.gameObject.AddComponent<Image>();
 
         // 加载按钮图片
         Sprite normalSprite = Resources.Load<Sprite>("UI/btn_normal");
@@ -70,7 +103,7 @@ public class SelectItem : BasePanel
         TextMeshProUGUI btnText = button.GetComponentInChildren<TextMeshProUGUI>();
         if (btnText != null)
         {
-            btnText.fontSize = 33; // 适当减小字体大小
+            btnText.fontSize = 32; // 适当减小字体大小
             string originalText = btnText.text;
             string englishText = GetEnglishTranslation(originalText);
             if (!string.IsNullOrEmpty(englishText))
@@ -81,21 +114,10 @@ public class SelectItem : BasePanel
 
     private string GetEnglishTranslation(string chinese)
     {
-        // 可根据模型名称添加特定翻译，这里仅示例
         Dictionary<string, string> translationDict = new Dictionary<string, string>()
         {
-            {"卫星", "Satellite"},
-            {"火箭", "Rocket"},
-            {"空间站", "Space Station"},
-            {"宇航服", "Space Suit"},
-            {"月球车", "Lunar Rover"}
+            {"关闭", "Close"}
         };
         return translationDict.ContainsKey(chinese) ? translationDict[chinese] : "";
-    }
-
-    private void OnClickNavigate()
-    {
-        CameraManager.Instance.Generator.GenerateOne(model.Index);
-        EventHandler.CallOpenSelectPanel(false);
     }
 }

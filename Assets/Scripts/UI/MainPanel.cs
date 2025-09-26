@@ -7,11 +7,13 @@ using TMPro;
 public class MainPanel : MonoBehaviour
 {
     public Button OpenSelectList;
+    public Button OpenPageList;
     public Button NextOne;
 
     private void Start()
     {
         SetupButton(OpenSelectList);
+        SetupButton(OpenPageList);
         SetupButton(NextOne);
 
         OpenSelectList.onClick.AddListener(() =>
@@ -21,6 +23,10 @@ public class MainPanel : MonoBehaviour
         NextOne.onClick.AddListener(() =>
         {
             CameraManager.Instance.Generator.GenerateOne();
+        });
+        OpenPageList.onClick.AddListener(() =>
+        {
+            EventHandler.CallOpenPagePanel(true);
         });
     }
 
