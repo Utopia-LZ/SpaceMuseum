@@ -1,2 +1,2 @@
-Suomi NPP
-美国2011年发射的环境监测卫星，以气象学家Verner Suomi命名。
+Global Precipitation Measurement (GPM)
+2014年发射的全球降水测量核心观测站，与多颗卫星组成星座。提供全球每3小时一次的降水观测，改进极端天气预测和气候变化研究。

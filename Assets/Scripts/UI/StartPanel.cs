@@ -97,11 +97,11 @@ public class StartPanel : MonoBehaviour
         if (btnText != null)
         {
             titleText.font = btnText.font;
-            titleText.fontSize = 55; // 稍微减小字体大小
+            titleText.fontSize = 60; // 稍微减小字体大小
         }
         else
         {
-            titleText.fontSize = 55;
+            titleText.fontSize = 60;
         }
         titleText.color = Color.white;
         titleText.alignment = TextAlignmentOptions.Center;
@@ -123,7 +123,7 @@ public class StartPanel : MonoBehaviour
         {
             subtitleText.font = btnText.font;
         }
-        subtitleText.fontSize = 40;
+        subtitleText.fontSize = 45;
         subtitleText.color = new Color(1, 1, 1, 0.8f);
         subtitleText.alignment = TextAlignmentOptions.Center;
 
@@ -142,9 +142,9 @@ public class StartPanel : MonoBehaviour
             btnImage = button.gameObject.AddComponent<Image>();
 
         // 加载按钮图片
-        Sprite normalSprite = Resources.Load<Sprite>("UI/btn_normal");
-        Sprite highlightedSprite = Resources.Load<Sprite>("UI/btn_highlighted");
-        Sprite pressedSprite = Resources.Load<Sprite>("UI/btn_pressed");
+        Sprite normalSprite = Resources.Load<Sprite>("UI/btn_normal2");
+        Sprite highlightedSprite = Resources.Load<Sprite>("UI/btn_highlighted2");
+        Sprite pressedSprite = Resources.Load<Sprite>("UI/btn_pressed2");
 
         if (normalSprite != null)
         {
@@ -170,7 +170,7 @@ public class StartPanel : MonoBehaviour
         TextMeshProUGUI btnText = button.GetComponentInChildren<TextMeshProUGUI>();
         if (btnText != null)
         {
-            btnText.fontSize = 22; // 适当减小字体大小
+            btnText.fontSize = 25; // 适当减小字体大小
             string originalText = btnText.text;
             string englishText = GetEnglishTranslation(originalText);
             if (!string.IsNullOrEmpty(englishText))
