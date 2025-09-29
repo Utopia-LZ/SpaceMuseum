@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CameraController : MonoBehaviour
 {
@@ -140,11 +141,14 @@ public class CameraController : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, VerticalNode.forward, out RaycastHit hit, MaxInteractionDistance, ModelLayer, QueryTriggerInteraction.Collide))
         {
-            UIManager.Instance.ShowTip("点击左键观察模型");
-            if (InteractionA)
+            if (!EventSystem.current.IsPointerOverGameObject())
             {
-                Model targetModel = hit.collider.GetComponent<Model>();
-                SetTarget(targetModel);
+                UIManager.Instance.ShowTip("点击左键观察模型");
+                if (InteractionA)
+                {
+                    Model targetModel = hit.collider.GetComponent<Model>();
+                    SetTarget(targetModel);
+                }
             }
         }
     }
