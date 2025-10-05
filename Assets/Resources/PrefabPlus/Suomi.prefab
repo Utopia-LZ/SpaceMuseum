@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7754914495853564317}
   - component: {fileID: 427918368873061974}
+  - component: {fileID: -8886872176244355632}
   m_Layer: 6
   m_Name: Suomi
   m_TagString: Untagged
@@ -136,6 +137,24 @@ MonoBehaviour:
   CanSplit: 0
   SplitRate: 2
   Content: 
+--- !u!114 &-8886872176244355632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266087453807148129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50ea0c9a85d08f47b71aadaac46e0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitSpeed: 10
+  orbitRadius: 8
+  earthTransform: {fileID: 0}
+  tiltAngle: 0
+  orbitRotation: 0
+  pause: 0
 --- !u!1 &1092505972355570439
 GameObject:
   m_ObjectHideFlags: 0

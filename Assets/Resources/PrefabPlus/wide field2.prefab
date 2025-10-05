@@ -251,6 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4669967821313438698}
   - component: {fileID: 7508102005596703183}
+  - component: {fileID: -4919490389151723426}
   m_Layer: 6
   m_Name: wide field2
   m_TagString: Untagged
@@ -299,6 +300,24 @@ MonoBehaviour:
   CanSplit: 0
   SplitRate: 2
   Content: 
+--- !u!114 &-4919490389151723426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336435817491744098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50ea0c9a85d08f47b71aadaac46e0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitSpeed: 10
+  orbitRadius: 8
+  earthTransform: {fileID: 0}
+  tiltAngle: 0
+  orbitRotation: 0
+  pause: 0
 --- !u!1 &2587794339474109757
 GameObject:
   m_ObjectHideFlags: 0

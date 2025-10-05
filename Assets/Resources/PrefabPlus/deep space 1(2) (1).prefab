@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3444838917135357856}
   - component: {fileID: 2203622676974990724}
+  - component: {fileID: 5283296435001945462}
   m_Layer: 0
   m_Name: deep space 1(2) (1)
   m_TagString: Untagged
@@ -59,6 +60,24 @@ MonoBehaviour:
   CanSplit: 0
   SplitRate: 2
   Content: 
+--- !u!114 &5283296435001945462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642148435154470173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50ea0c9a85d08f47b71aadaac46e0bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitSpeed: 10
+  orbitRadius: 8
+  earthTransform: {fileID: 0}
+  tiltAngle: 0
+  orbitRotation: 0
+  pause: 0
 --- !u!1 &1655446294326207180
 GameObject:
   m_ObjectHideFlags: 0
